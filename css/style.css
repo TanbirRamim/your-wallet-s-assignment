@@ -1,0 +1,34 @@
+/* basic styles  */
+.txt-color {
+  color: #109294;
+}
+.button-clr {
+  background-color: #10a9ab;
+  color: white;
+  font-weight: 700;
+}
+.calculate-section {
+  background-color: aliceblue;
+}
+.incm-div {
+  display: inline;
+}
+/*-------------------
+ mobile responsive 
+--------------------- */
+@media only screen and (max-width: 576px) {
+  .bucks-con {
+    flex-direction: column;
+  }
+  .calculate-section {
+    width: 100%;
+  }
+  .image-wdth {
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  .saving-con {
+    flex-direction: column;
+  }
+}

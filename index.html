@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your wallet here</title>
+    <!--============ bootstrap style ================-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--============== stylesheet=================== -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--========= header section ============== -->
+    <header>
+        <h1 class="text-center txt-color fs-1 fw-bold my-4 ">
+            Your wallet
+        </h1>
+    </header>
+    <!--================= main section   =====================-->
+    <main>
+        <section class="container mb-5">
+            <div class="d-flex bucks-con">
+                <div class="me-5 ">
+                    <img class="img-fluid image-wdth" src="img/money.jpg" alt="">
+
+                </div>
+                <div class=" col-sm-6 calculate-section ">
+
+                    <h4 class="text-center mt-5 mb-3">Income</h4>
+
+                    <div class="row g-3  mx-5">
+                        <div class="col-auto">
+                            <label class="col-form-label fs-6 fw-bolder">Income:</label>
+                        </div>
+                        <div class="col-auto">
+                            <input id="income-input" class="form-control">
+                        </div>
+                        <p class="text-danger" id="income-error"></p>
+                    </div>
+
+                    <h4 class="text-center mt-5 mb-3">Expenses</h4>
+
+                    <div class="row g-3  mx-5">
+                        <div class="col-auto">
+                            <label class=" col-form-label fs-6 fw-bolder">Food:</label>
+                        </div>
+                        <div class="col-auto">
+                            <input id="food-cost" class="form-control">
+                        </div>
+                        <div class="row g-3  ">
+                            <div class="col-auto">
+                                <label class="col-form-label fs-6 fw-bolder">Rent:</label>
+                            </div>
+                            <div class="col-auto">
+                                <input id="rent-cost" class="form-control">
+                            </div>
+                            <div class="row g-1 mt-3">
+                                <div class="col-auto">
+                                    <label class="col-form-label fs-6 fw-bolder">Clothes:</label>
+                                </div>
+                                <div class="col-auto">
+                                    <input id="clothes-cost" class="form-control">
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-danger" id="error-two"></p>
+                            </div>
+                            <div class="text-center">
+                                <button id="calculator-button" class="btn button-clr " type="submit">Calculate</button>
+                            </div>
+                            <h4 class="text-center mt-5 ">Total Expenses: <span id="total">00</span>
+                            </h4>
+                            <h4 class="text-center mb-3">Remaining Balance: <span id="initial-remaining">00</span>
+                            </h4>
+                            <div class="d-flex saving-con">
+                                <div class="d-flex">
+                                    <div>
+                                        <label class="col-form-label fs-6 fw-bolder">Save:</label>
+                                    </div>
+                                    <div class="ms-3">
+                                        <input id="save-input" class="form-control">
+                                    </div>
+                                </div>
+                                <h4 class="mx-2">%</h4>
+
+                                <button id="save-button" class="btn button-clr w-50" type="submit">Save</button>
+
+                            </div>
+                            <h4 class="text-center mt-5 ">Saving Amount: <span id="saving-amount">00</span>
+                            </h4>
+                            <h4 class="text-center mb-3">Remaining Balance: <span id="remaining-balance">00</span>
+                            </h4>
+
+                        </div>
+                    </div>
+        </section>
+    </main>
+    <!-- =============== main section end ==================== -->
+
+
+
+    <!--========== bootstrap script =========== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--============= javascript================ -->
+    <script src="js/calculate.js"></script>
+
+</body>
+
+</html>
